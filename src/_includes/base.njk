@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if title %}{{ title }} | {% endif %}Plato's Wallet - Free Marketing + Payment Processing</title>
+    <meta name="description" content="{{ description or 'Process payments and get FREE marketing. Custom website, SEO, Google Ads, social media — all included. Competitive rates, no contracts.' }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    
+    <!-- Schema.org for better SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Plato's Wallet",
+      "description": "Payment processing with free marketing services",
+      "url": "https://platoswallet.com",
+      "telephone": "",
+      "email": "peter@gullstack.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+      },
+      "serviceType": "Payment Processing",
+      "areaServed": "US"
+    }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="/" class="logo">
+                    <span class="logo-text">Plato's Wallet</span>
+                    <span class="logo-tagline">by GullStack</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#results">Results</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact" class="btn-primary">Get Started</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        {{ content | safe }}
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Plato's Wallet</h3>
+                    <p>Payment processing + free marketing services for retail businesses.</p>
+                    <p class="contact-email">
+                        <a href="mailto:peter@gullstack.com">peter@gullstack.com</a>
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#processing">Payment Processing</a></li>
+                            <li><a href="#website">Custom Websites</a></li>
+                            <li><a href="#seo">SEO Services</a></li>
+                            <li><a href="#ads">Google Ads</a></li>
+                            <li><a href="#social">Social Media</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="mailto:peter@gullstack.com">Contact Support</a></li>
+                            <li><a href="#getting-started">Getting Started</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Plato's Wallet. Powered by <a href="https://gullstack.com" target="_blank" rel="noopener">GullStack</a>.</p>
+                <p class="footer-disclaimer">PCI DSS Compliant. Bank-level security. All processing services subject to underwriting approval.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

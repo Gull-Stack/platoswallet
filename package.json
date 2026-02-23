@@ -1,0 +1,17 @@
+{
+  "name": "platoswallet",
+  "version": "1.0.0",
+  "description": "Payment Processing + Free Marketing - Plato's Wallet by GullStack",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "clean": "rm -rf _site"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "clean-css": "^5.3.3",
+    "terser": "^5.46.0"
+  },
+  "author": "GullStack Projects",
+  "license": "MIT"
+}
