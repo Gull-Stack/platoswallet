@@ -54,6 +54,21 @@ export default function Hero() {
           We handle your credit card processing at competitive rates — and use the margin to fund your marketing. Custom website, SEO, Google Ads, social media... all included FREE.
         </motion.p>
 
+        {/* Stat Pills */}
+        <motion.div
+          initial={{ opacity: 0, filter: 'blur(10px)' }}
+          animate={{ opacity: 1, filter: 'blur(0px)' }}
+          transition={{ duration: 0.6, delay: 0.9 }}
+          className="flex items-center gap-6 mt-8 flex-wrap justify-center"
+        >
+          {[{v:'$0', l:'Marketing Fees'}, {v:'2.4%', l:'Avg. Rate'}, {v:'$5K+', l:'Monthly Value'}, {v:'30+', l:'Happy Partners'}].map(s => (
+            <div key={s.l} className="liquid-glass rounded-2xl px-5 py-3 text-center">
+              <div className="text-2xl font-heading italic text-white">{s.v}</div>
+              <div className="text-xs text-white/50 font-body">{s.l}</div>
+            </div>
+          ))}
+        </motion.div>
+
         {/* CTA Buttons */}
         <motion.div
           initial={{ opacity: 0, filter: 'blur(10px)' }}
@@ -61,12 +76,18 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 1.1 }}
           className="mt-8 flex items-center gap-4"
         >
-          <button className="liquid-glass-strong rounded-full px-6 py-3 text-sm font-medium font-body text-white flex items-center gap-2 hover:bg-white/10 transition-colors">
+          <a 
+            href="mailto:peter@gullstack.com?subject=Free%20Analysis%20-%20Platos%20Wallet"
+            className="liquid-glass-strong rounded-full px-6 py-3 text-sm font-medium font-body text-white flex items-center gap-2 hover:bg-white/10 transition-colors"
+          >
             Get Your Free Analysis <ArrowUpRight className="w-4 h-4" />
-          </button>
-          <button className="text-sm font-medium font-body text-white flex items-center gap-2 hover:text-white/80 transition-colors">
+          </a>
+          <a 
+            href="#how-it-works"
+            className="text-sm font-medium font-body text-white flex items-center gap-2 hover:text-white/80 transition-colors"
+          >
             <Play className="w-4 h-4" /> Learn How It Works
-          </button>
+          </a>
         </motion.div>
 
         {/* Partners at bottom */}

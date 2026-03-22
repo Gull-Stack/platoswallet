@@ -1,10 +1,10 @@
 import HLSVideo from './HLSVideo';
 
 const stats = [
-  { value: '200+', label: 'Sites launched' },
-  { value: '98%', label: 'Client satisfaction' },
-  { value: '3.2x', label: 'More conversions' },
-  { value: '5 days', label: 'Average delivery' },
+  { value: '$9K+', label: 'Annual savings for partners' },
+  { value: '2.4%', label: 'Average processing rate' },
+  { value: '+7%', label: 'Average revenue growth' },
+  { value: '30+', label: 'Happy retail partners' },
 ];
 
 export default function Stats() {

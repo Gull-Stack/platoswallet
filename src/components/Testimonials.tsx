@@ -1,18 +1,18 @@
 const testimonials = [
   {
-    quote: 'A complete rebuild in five days. Five. Days. The site looks like we spent six figures on it.',
-    name: 'Sarah Chen',
-    role: 'CEO, Luminary',
+    quote: "I was skeptical — free marketing sounded too good to be true. But they delivered. My website looks amazing, I'm ranking on Google, and I didn't pay a dime for it.",
+    name: 'Mike R.',
+    role: 'Owner, Bay Area Hardware',
   },
   {
-    quote: 'Conversions up 4x in the first month. The AI optimization is genuinely magical.',
-    name: 'Marcus Webb',
-    role: 'Head of Growth, Arcline',
+    quote: "Switching was painless. Same rates I was paying before, but now I have a professional website and Google Ads bringing in 20+ new customers a week.",
+    name: 'Sarah M.',
+    role: 'Owner, Downtown Boutique',
   },
   {
-    quote: "They didn't just design our site—they understood our brand better than we did.",
-    name: 'Elena Voss',
-    role: 'Brand Director, Helix',
+    quote: "They basically gave me a $50,000 marketing department for free. My competitors have no idea how I'm showing up everywhere online.",
+    name: 'Jennifer L.',
+    role: 'Owner, Luxe Day Spa',
   },
 ];
 

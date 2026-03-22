@@ -1,26 +1,10 @@
-import { CreditCard, Globe, TrendingUp, Users } from 'lucide-react';
+import { Zap, Shield, BarChart3, Palette } from 'lucide-react';
 
 const features = [
-  {
-    icon: CreditCard,
-    title: 'Competitive Processing',
-    description: '2.4% average rate. Same-day deposits. No hidden fees.',
-  },
-  {
-    icon: Globe,
-    title: 'Complete Marketing',
-    description: 'Website, SEO, Google Ads, social media — all included FREE.',
-  },
-  {
-    icon: TrendingUp,
-    title: 'Proven Results',
-    description: 'Our partners see average 30%+ growth in customer traffic.',
-  },
-  {
-    icon: Users,
-    title: 'True Partnership',
-    description: 'Month-to-month. Transparent reporting. We succeed when you do.',
-  },
+  { icon: Zap, title: 'Same-Day Deposits', description: 'Get your money when you need it. No waiting, no delays.' },
+  { icon: Shield, title: 'PCI DSS Compliant', description: 'Bank-level security for every transaction. Your data is protected.' },
+  { icon: BarChart3, title: '$5K+ Monthly Value', description: 'Website, SEO, ads, social media — worth thousands, included free.' },
+  { icon: Palette, title: 'No Contracts', description: 'Month-to-month. We earn your business every single month.' },
 ];
 
 export default function FeaturesGrid() {
@@ -40,10 +24,10 @@ export default function FeaturesGrid() {
       />
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="liquid-glass rounded-full px-3.5 py-1 text-xs font-medium text-white font-body inline-block mb-4">
-          Why Choose Us
+          Why Plato's Wallet
         </div>
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading italic text-white tracking-tight leading-[0.9] mb-12">
-          The advantage is clear.
+          The difference is everything.
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

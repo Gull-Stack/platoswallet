@@ -3,34 +3,30 @@ export default function FeaturesChess() {
     <section className="py-24 px-6 md:px-16 lg:px-24">
       <div className="max-w-6xl mx-auto">
         <div className="liquid-glass rounded-full px-3.5 py-1 text-xs font-medium text-white font-body inline-block mb-4">
-          Complete Solution
+          Complete Marketing Suite
         </div>
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading italic text-white tracking-tight leading-[0.9] mb-16">
-          Everything you need to grow.
+          $5,000+ in marketing. Included free.
         </h2>
 
         {/* Row 1: text left, image right */}
         <div className="flex flex-col lg:flex-row items-center gap-12 mb-24">
           <div className="flex-1">
             <h3 className="text-2xl md:text-3xl font-heading italic text-white mb-4">
-              Competitive Processing + FREE Marketing
+              Custom Website — Built For You
             </h3>
             <p className="text-white/60 font-body font-light text-sm mb-6 max-w-md">
-              Industry-leading rates that match or beat your current processor. Plus website design, 
-              SEO, Google Ads, and social media — all included at no extra cost.
+              A stunning, conversion-optimized website unique to your brand. Mobile-first, lightning fast, SEO-ready. Worth $3,000+.
             </p>
             <button className="liquid-glass-strong rounded-full px-5 py-2.5 text-sm font-medium font-body text-white hover:bg-white/10 transition-colors">
-              See pricing
+              See Examples
             </button>
           </div>
           <div className="flex-1">
             <div className="liquid-glass rounded-2xl overflow-hidden aspect-video relative">
-              <img 
-                src="/images/payment-terminal.jpg" 
-                alt="Payment processing" 
-                className="w-full h-full object-cover" 
-              />
-              <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-transparent to-black/60" />
+              <div className="w-full h-full bg-gradient-to-br from-blue-500/20 via-purple-500/10 to-pink-500/20 flex items-center justify-center">
+                <div className="text-white/40 text-2xl font-heading italic">Website Preview</div>
+              </div>
             </div>
           </div>
         </div>
@@ -39,24 +35,20 @@ export default function FeaturesChess() {
         <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
           <div className="flex-1">
             <h3 className="text-2xl md:text-3xl font-heading italic text-white mb-4">
-              Real Partnership, Real Results
+              SEO + Google Ads + Social Media
             </h3>
             <p className="text-white/60 font-body font-light text-sm mb-6 max-w-md">
-              Month-to-month agreements. Transparent reporting. Dedicated support. 
-              We succeed when you succeed — that's why we invest in marketing that drives real growth.
+              Local SEO, Google Business optimization, professional ad campaigns, social media management. We handle it all so you can focus on your business.
             </p>
             <button className="liquid-glass-strong rounded-full px-5 py-2.5 text-sm font-medium font-body text-white hover:bg-white/10 transition-colors">
-              View case studies
+              Full Service List
             </button>
           </div>
           <div className="flex-1">
             <div className="liquid-glass rounded-2xl overflow-hidden aspect-video relative">
-              <img 
-                src="/images/business-team.jpg" 
-                alt="Business partnership" 
-                className="w-full h-full object-cover" 
-              />
-              <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-transparent to-black/60" />
+              <div className="w-full h-full bg-gradient-to-br from-green-500/20 via-teal-500/10 to-blue-500/20 flex items-center justify-center">
+                <div className="text-white/40 text-2xl font-heading italic">Marketing Suite</div>
+              </div>
             </div>
           </div>
         </div>

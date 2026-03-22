@@ -1,4 +1,4 @@
-import { ArrowUpRight } from 'lucide-react';
+
 
 export default function HowItWorks() {
   return (
@@ -27,20 +27,28 @@ export default function HowItWorks() {
       />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center text-center min-h-[500px]">
+      <div id="how-it-works" className="relative z-10 flex flex-col items-center justify-center text-center min-h-[500px]">
         <div className="liquid-glass rounded-full px-3.5 py-1 text-xs font-medium text-white font-body inline-block mb-4">
-          Your Success Is Our Success
+          How It Works
         </div>
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading italic text-white tracking-tight leading-[0.9] mb-6">
-          We only win when you win.
+          Four steps to free marketing.
         </h2>
-        <p className="text-white/60 font-body font-light text-sm max-w-lg mb-8">
-          That's why we invest our processing margins into marketing that drives real results. 
-          Your growth is our business model.
-        </p>
-        <button className="liquid-glass-strong rounded-full px-6 py-3 text-sm font-medium font-body text-white flex items-center gap-2 hover:bg-white/10 transition-colors">
-          Get Your Free Analysis <ArrowUpRight className="w-4 h-4" />
-        </button>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 max-w-5xl">
+          {[
+            {n:'1', t:'Free Analysis', d:'Send us your current processing statements. We show you exactly what you save and what marketing you get.'},
+            {n:'2', t:'Easy Switch', d:'Seamless transition to our platform. We handle all setup. Usually less than a week.'},
+            {n:'3', t:'Marketing Begins', d:'We immediately build your website, optimize Google, and launch your campaigns.'},
+            {n:'4', t:'You Grow', d:'More customers. More sales. More transactions. The flywheel spins — everyone wins.'}
+          ].map(step => (
+            <div key={step.n} className="liquid-glass rounded-2xl p-6 text-left">
+              <div className="liquid-glass-strong rounded-full w-10 h-10 flex items-center justify-center text-white font-heading italic text-lg mb-4">{step.n}</div>
+              <h3 className="text-lg font-heading italic text-white mb-2">{step.t}</h3>
+              <p className="text-white/60 font-body font-light text-sm">{step.d}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
