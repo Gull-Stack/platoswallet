@@ -30,9 +30,10 @@ export default function FeaturesGrid() {
           The difference is everything.
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="morphing-blob" style={{ top: '10%', left: '-5%' }} />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
           {features.map(({ icon: Icon, title, description }) => (
-            <div key={title} className="liquid-glass rounded-2xl p-6 hover:bg-white/[0.06] transition-all duration-300">
+            <div key={title} className="liquid-glass liquid-glass-shimmer water-ripple rounded-2xl p-6 hover:bg-white/[0.06] transition-all duration-300 hover:scale-[1.03]">
               <div className="liquid-glass-strong rounded-full w-10 h-10 flex items-center justify-center mb-4">
                 <Icon className="w-5 h-5 text-white" />
               </div>

@@ -22,12 +22,8 @@ export default function FeaturesChess() {
               See Examples
             </button>
           </div>
-          <div className="flex-1">
-            <div className="liquid-glass rounded-2xl overflow-hidden aspect-video relative">
-              <div className="w-full h-full bg-gradient-to-br from-blue-500/20 via-purple-500/10 to-pink-500/20 flex items-center justify-center">
-                <div className="text-white/40 text-2xl font-heading italic">Website Preview</div>
-              </div>
-            </div>
+          <div className="flex-1 liquid-glass rounded-2xl overflow-hidden">
+            <img src="/images/payment-terminal.jpg" alt="Payment processing" className="w-full h-full object-cover aspect-video" loading="lazy" />
           </div>
         </div>
 
@@ -44,12 +40,8 @@ export default function FeaturesChess() {
               Full Service List
             </button>
           </div>
-          <div className="flex-1">
-            <div className="liquid-glass rounded-2xl overflow-hidden aspect-video relative">
-              <div className="w-full h-full bg-gradient-to-br from-green-500/20 via-teal-500/10 to-blue-500/20 flex items-center justify-center">
-                <div className="text-white/40 text-2xl font-heading italic">Marketing Suite</div>
-              </div>
-            </div>
+          <div className="flex-1 liquid-glass rounded-2xl overflow-hidden">
+            <img src="/images/analytics.jpg" alt="Marketing analytics" className="w-full h-full object-cover aspect-video" loading="lazy" />
           </div>
         </div>
       </div>

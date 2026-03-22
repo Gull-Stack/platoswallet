@@ -19,6 +19,19 @@ export default function Hero() {
       {/* Video overlay for better text readability */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black z-[1]" />
 
+      {/* Aurora flowing background */}
+      <div className="aurora-bg" />
+
+      {/* Floating particles */}
+      {[...Array(8)].map((_, i) => (
+        <div key={i} className="particle" style={{
+          left: `${10 + i * 12}%`,
+          top: `${20 + (i % 3) * 25}%`,
+          animationDelay: `${i * 0.8}s`,
+          animationDuration: `${5 + i * 0.7}s`,
+        }} />
+      ))}
+
       {/* Bottom gradient */}
       <div
         className="absolute bottom-0 left-0 right-0 z-[2] h-[300px]"
@@ -40,7 +53,7 @@ export default function Hero() {
         {/* Heading */}
         <BlurText
           text="Process Payments. Get FREE Marketing. Grow Your Business."
-          className="text-6xl md:text-7xl lg:text-[5.5rem] font-heading italic text-white leading-[0.8] tracking-[-4px] max-w-4xl"
+          className="text-4xl md:text-6xl lg:text-[5.5rem] font-heading italic text-white leading-[0.8] tracking-[-4px] max-w-4xl"
           delay={100}
         />
 
@@ -59,7 +72,7 @@ export default function Hero() {
           initial={{ opacity: 0, filter: 'blur(10px)' }}
           animate={{ opacity: 1, filter: 'blur(0px)' }}
           transition={{ duration: 0.6, delay: 0.9 }}
-          className="flex items-center gap-6 mt-8 flex-wrap justify-center"
+          className="grid grid-cols-2 md:flex md:items-center gap-3 md:gap-6 mt-8 w-full max-w-lg md:max-w-none"
         >
           {[{v:'$0', l:'Marketing Fees'}, {v:'2.4%', l:'Avg. Rate'}, {v:'$5K+', l:'Monthly Value'}, {v:'30+', l:'Happy Partners'}].map(s => (
             <div key={s.l} className="liquid-glass rounded-2xl px-5 py-3 text-center">

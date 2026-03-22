@@ -7,28 +7,36 @@ import Stats from './components/Stats';
 import Testimonials from './components/Testimonials';
 import CTAFooter from './components/CTAFooter';
 import ImageBreak from './components/ImageBreak';
+import MouseGlow from './components/MouseGlow';
 
 export default function App() {
   return (
     <div className="bg-black overflow-visible">
+      <MouseGlow />
       <Navbar />
       <Hero />
+      <div className="gradient-divider" />
+      <HowItWorks />
+      <div className="gradient-divider" />
+      <FeaturesChess />
       <ImageBreak 
         src="/images/retail-store.jpg" 
-        alt="Retail store interior" 
+        alt="Retail business" 
       />
-      <HowItWorks />
+      <div className="gradient-divider" />
+      <FeaturesGrid />
+      <div className="gradient-divider" />
+      <Stats />
       <ImageBreak 
         src="/images/coffee-shop.jpg" 
-        alt="Modern coffee shop" 
+        alt="Local business" 
       />
-      <FeaturesChess />
-      <FeaturesGrid />
-      <Stats />
+      <div className="gradient-divider" />
       <Testimonials />
+      <div className="gradient-divider" />
       <ImageBreak 
-        src="/images/analytics.jpg" 
-        alt="Business analytics and growth" 
+        src="/images/business-team.jpg" 
+        alt="Partnership" 
       />
       <CTAFooter />
     </div>

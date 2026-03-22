@@ -34,7 +34,7 @@ export default function Stats() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             {stats.map(({ value, label }) => (
               <div key={label}>
-                <div className="text-4xl md:text-5xl lg:text-6xl font-heading italic text-white">
+                <div className="text-4xl md:text-5xl lg:text-6xl font-heading italic text-white stat-glow">
                   {value}
                 </div>
                 <div className="text-white/60 font-body font-light text-sm mt-2">
