@@ -6,7 +6,7 @@ export default function Navbar() {
       <div className="font-heading italic text-white text-2xl">
         PlatosWallet
       </div>
-      <div className="liquid-glass rounded-full px-2 py-2 flex items-center gap-1">
+      <div className="liquid-glass-strong rounded-full px-2 py-2 flex items-center gap-1">
         {['Home', 'Services', 'Work', 'Process', 'Pricing'].map((item) => (
           <a
             key={item}

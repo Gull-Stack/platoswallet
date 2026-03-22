@@ -30,7 +30,7 @@ export default function Stats() {
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto">
-        <div className="liquid-glass rounded-3xl p-12 md:p-16">
+        <div className="liquid-glass-strong rounded-3xl p-12 md:p-16">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             {stats.map(({ value, label }) => (
               <div key={label}>
