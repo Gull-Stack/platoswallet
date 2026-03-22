@@ -126,3 +126,19 @@ body {
   pointer-events: none;
   z-index: 0;
 }
+
+/* Animated gradient keyframes */
+@keyframes gradientShift {
+  0%, 100% { 
+    transform: scale(1) translate(0, 0); 
+    opacity: 0.5; 
+  }
+  33% { 
+    transform: scale(1.15) translate(3%, -2%); 
+    opacity: 0.8; 
+  }
+  66% { 
+    transform: scale(0.9) translate(-3%, 3%); 
+    opacity: 0.6; 
+  }
+}
