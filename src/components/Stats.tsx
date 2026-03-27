@@ -9,7 +9,7 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section className="relative py-32 px-6 md:px-16 lg:px-24 overflow-hidden">
+    <section className="relative py-24 px-6 md:px-16 lg:px-24 overflow-hidden bg-slate-50">
       {/* Background HLS Video - Desaturated */}
       <HLSVideo
         src="https://stream.mux.com/NcU3HlHeF7CUL86azTTzpy3Tlb00d6iF3BmCdFslMJYM.m3u8"
@@ -19,25 +19,25 @@ export default function Stats() {
 
       {/* Top fade */}
       <div
-        className="absolute top-0 left-0 right-0 z-[1] h-[200px]"
-        style={{ background: 'linear-gradient(to bottom, black, transparent)' }}
+        className="absolute top-0 left-0 right-0 z-[1] h-[100px]"
+        style={{ background: 'linear-gradient(to bottom, rgba(248, 250, 252, 0.9), transparent)' }}
       />
       {/* Bottom fade */}
       <div
-        className="absolute bottom-0 left-0 right-0 z-[1] h-[200px]"
-        style={{ background: 'linear-gradient(to top, black, transparent)' }}
+        className="absolute bottom-0 left-0 right-0 z-[1] h-[100px]"
+        style={{ background: 'linear-gradient(to top, rgba(248, 250, 252, 0.9), transparent)' }}
       />
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto">
-        <div className="liquid-glass-strong rounded-3xl p-12 md:p-16">
+        <div className="liquid-glass rounded-3xl p-12 md:p-16 border border-slate-200">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             {stats.map(({ value, label }) => (
               <div key={label}>
-                <div className="text-4xl md:text-5xl lg:text-6xl font-heading italic text-white stat-glow">
+                <div className="text-4xl md:text-5xl lg:text-6xl font-heading italic text-slate-800">
                   {value}
                 </div>
-                <div className="text-white/60 font-body font-light text-sm mt-2">
+                <div className="text-slate-600 font-body font-medium text-sm mt-3">
                   {label}
                 </div>
               </div>

@@ -3,7 +3,7 @@ import HLSVideo from './HLSVideo';
 export default function CTAFooter() {
   return (
     <>
-      <section className="relative py-32 px-6 md:px-16 lg:px-24 overflow-hidden">
+      <section className="relative py-24 px-6 md:px-16 lg:px-24 overflow-hidden bg-gradient-to-br from-slate-800 to-slate-900">
         {/* Background HLS Video */}
         <HLSVideo
           src="https://stream.mux.com/8wrHPCX2dC3msyYU9ObwqNdm00u3ViXvOSHUMRYSEe5Q.m3u8"
@@ -12,13 +12,13 @@ export default function CTAFooter() {
 
         {/* Top fade */}
         <div
-          className="absolute top-0 left-0 right-0 z-[1] h-[200px]"
-          style={{ background: 'linear-gradient(to bottom, black, transparent)' }}
+          className="absolute top-0 left-0 right-0 z-[1] h-[100px]"
+          style={{ background: 'linear-gradient(to bottom, rgba(30, 41, 59, 0.8), transparent)' }}
         />
         {/* Bottom fade */}
         <div
-          className="absolute bottom-0 left-0 right-0 z-[1] h-[200px]"
-          style={{ background: 'linear-gradient(to top, black, transparent)' }}
+          className="absolute bottom-0 left-0 right-0 z-[1] h-[100px]"
+          style={{ background: 'linear-gradient(to top, rgba(30, 41, 59, 0.8), transparent)' }}
         />
 
         {/* Content */}
@@ -38,7 +38,7 @@ export default function CTAFooter() {
             </a>
             <a 
               href="tel:"
-              className="bg-white text-black rounded-full px-6 py-3 text-sm font-medium font-body hover:bg-white/90 transition-colors"
+              className="bg-white text-slate-800 rounded-full px-6 py-3 text-sm font-medium font-body hover:bg-white/90 transition-colors"
             >
               Call Us
             </a>
@@ -47,17 +47,17 @@ export default function CTAFooter() {
       </section>
 
       {/* Footer */}
-      <footer className="mt-32 pt-8 border-t border-white/10 px-6 pb-8">
+      <footer className="bg-white border-t border-slate-200 px-6 py-8">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
-          <span className="text-white/40 text-xs font-body">
-            &copy; 2026 Plato's Wallet. Powered by <a href="https://gullstack.com" className="hover:text-white/60 transition-colors">GullStack</a>.
+          <span className="text-slate-500 text-xs font-body">
+            &copy; 2026 Plato's Wallet. Powered by <a href="https://gullstack.com" className="hover:text-slate-700 transition-colors">GullStack</a>.
           </span>
           <div className="flex items-center gap-6">
             {['Privacy', 'Terms', 'Contact'].map((link) => (
               <a
                 key={link}
                 href="#"
-                className="text-white/40 text-xs font-body hover:text-white/60 transition-colors"
+                className="text-slate-500 text-xs font-body hover:text-slate-700 transition-colors"
               >
                 {link}
               </a>
