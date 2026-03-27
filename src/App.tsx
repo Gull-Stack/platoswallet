@@ -11,7 +11,7 @@ import MouseGlow from './components/MouseGlow';
 
 export default function App() {
   return (
-    <div className="bg-black overflow-visible">
+    <div className="bg-white overflow-visible">
       <MouseGlow />
       <Navbar />
       <Hero />

@@ -4,7 +4,7 @@ import BlurText from './BlurText';
 
 export default function Hero() {
   return (
-    <section className="relative overflow-visible h-[1000px] bg-black flex flex-col items-center">
+    <section className="relative overflow-visible h-[900px] bg-gradient-to-br from-slate-50 to-blue-50 flex flex-col items-center">
       {/* Background Video */}
       <video
         className="absolute inset-0 w-full h-full object-cover z-0"
@@ -17,7 +17,7 @@ export default function Hero() {
       />
 
       {/* Video overlay for better text readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black z-[1]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-white/60 to-white/90 z-[1]" />
 
       {/* Aurora flowing background */}
       <div className="aurora-bg" />
@@ -34,18 +34,18 @@ export default function Hero() {
 
       {/* Bottom gradient */}
       <div
-        className="absolute bottom-0 left-0 right-0 z-[2] h-[300px]"
-        style={{ background: 'linear-gradient(to bottom, transparent, black)' }}
+        className="absolute bottom-0 left-0 right-0 z-[2] h-[200px]"
+        style={{ background: 'linear-gradient(to bottom, transparent, rgba(248, 250, 252, 0.9))' }}
       />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center text-center pt-[150px] flex-1">
+      <div className="relative z-10 flex flex-col items-center text-center pt-24 pb-16 px-6 max-w-5xl mx-auto flex-1">
         {/* Badge */}
         <div className="liquid-glass rounded-full px-4 py-2 flex items-center gap-2 mb-8">
-          <span className="bg-white text-black rounded-full px-2 py-0.5 text-xs font-medium font-body">
+          <span className="bg-slate-800 text-white rounded-full px-2 py-0.5 text-xs font-medium font-body">
             ✓
           </span>
-          <span className="text-sm text-white font-body">
+          <span className="text-sm text-slate-700 font-body">
             Now Accepting Retail Businesses
           </span>
         </div>
@@ -53,7 +53,7 @@ export default function Hero() {
         {/* Heading */}
         <BlurText
           text="Process Payments. Get FREE Marketing. Grow Your Business."
-          className="text-4xl md:text-6xl lg:text-[5.5rem] font-heading italic text-white leading-[0.8] tracking-[-4px] max-w-4xl"
+          className="text-4xl md:text-6xl lg:text-[5.5rem] font-heading italic text-slate-800 leading-[0.85] tracking-[-4px] max-w-4xl"
           delay={100}
         />
 
@@ -62,7 +62,7 @@ export default function Hero() {
           initial={{ opacity: 0, filter: 'blur(10px)' }}
           animate={{ opacity: 1, filter: 'blur(0px)' }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="mt-8 text-white/60 font-body font-light text-lg max-w-xl"
+          className="mt-8 text-slate-600 font-body font-light text-lg max-w-xl leading-relaxed"
         >
           We handle your credit card processing at competitive rates — and use the margin to fund your marketing. Custom website, SEO, Google Ads, social media... all included FREE.
         </motion.p>
@@ -75,9 +75,9 @@ export default function Hero() {
           className="grid grid-cols-2 md:flex md:items-center gap-3 md:gap-6 mt-8 w-full max-w-lg md:max-w-none"
         >
           {[{v:'$0', l:'Marketing Fees'}, {v:'2.4%', l:'Avg. Rate'}, {v:'$5K+', l:'Monthly Value'}, {v:'30+', l:'Happy Partners'}].map(s => (
-            <div key={s.l} className="liquid-glass rounded-2xl px-5 py-3 text-center">
-              <div className="text-2xl font-heading italic text-white">{s.v}</div>
-              <div className="text-xs text-white/50 font-body">{s.l}</div>
+            <div key={s.l} className="liquid-glass rounded-2xl px-5 py-4 text-center">
+              <div className="text-2xl font-heading italic text-slate-800">{s.v}</div>
+              <div className="text-xs text-slate-500 font-body font-medium">{s.l}</div>
             </div>
           ))}
         </motion.div>
@@ -91,13 +91,13 @@ export default function Hero() {
         >
           <a 
             href="mailto:peter@gullstack.com?subject=Free%20Analysis%20-%20Platos%20Wallet"
-            className="liquid-glass-strong rounded-full px-6 py-3 text-sm font-medium font-body text-white flex items-center gap-2 hover:bg-white/10 transition-colors"
+            className="liquid-glass-strong rounded-full px-6 py-3 text-sm font-medium font-body text-white flex items-center gap-2 hover:bg-slate-700 transition-colors"
           >
             Get Your Free Analysis <ArrowUpRight className="w-4 h-4" />
           </a>
           <a 
             href="#how-it-works"
-            className="text-sm font-medium font-body text-white flex items-center gap-2 hover:text-white/80 transition-colors"
+            className="text-sm font-medium font-body text-slate-700 flex items-center gap-2 hover:text-slate-800 transition-colors"
           >
             <Play className="w-4 h-4" /> Learn How It Works
           </a>
@@ -115,12 +115,12 @@ export default function Hero() {
 function Partners() {
   return (
     <div className="flex flex-col items-center gap-6">
-      <div className="liquid-glass rounded-full px-3.5 py-1 text-xs font-medium text-white font-body inline-block">
+      <div className="liquid-glass rounded-full px-3.5 py-1 text-xs font-medium text-slate-600 font-body inline-block">
         Trusted by retail businesses
       </div>
       <div className="flex items-center gap-12 flex-wrap justify-center">
         {['PCI DSS Compliant', 'All Major Cards', '24/7 Support', 'No Hidden Fees'].map((name) => (
-          <span key={name} className="text-lg md:text-xl font-body text-white/80">
+          <span key={name} className="text-lg md:text-xl font-body text-slate-600">
             {name}
           </span>
         ))}
